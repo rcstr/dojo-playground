@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Report!</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+<div class="row">
+    <form id="loginForm">
+        <div class="row">
+            <div class="columns small-12">
+                <div class="row collapse">
+                    <div class="columns small-10">
+                        <input type="text" name="employeeNumber" id="employeeNumber" aria-label="Employee number"/>
+                    </div>
+                    <div class="columns small-2">
+                        <input type="submit" value="GO!" class="button postfix"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    var dojoConfig = {
+        async: true,
+        packages: [{
+            name: "app",
+            location: "/expenseReport/js/app" // http-server
+        }]
+    };
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/dojo/1.10.4/dojo.js"></script>
+<script>
+    require(['app/home'], function () {
+    });
+</script>
+</body>
+</html>
