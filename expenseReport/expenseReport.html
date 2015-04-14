@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Report!</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+<div class="row">
+    <form id="expenseReportForm">
+        <div class="row">
+            <h2>Expense Report</h2>
+        </div>
+        <div class="row">
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Employee Number</strong></div>
+                    <div class="columns small-6"><span>12345</span></div>
+                </div>
+            </div>
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Department Code</strong></div>
+                    <div class="columns small-6"><span>TD/GFRY</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Employee Number</strong></div>
+                    <div class="columns small-6"><span>12345</span></div>
+                </div>
+            </div>
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Department Code</strong></div>
+                    <div class="columns small-6"><span>TD/GFRY</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Employee Number</strong></div>
+                    <div class="columns small-6"><span>12345</span></div>
+                </div>
+            </div>
+            <div class="columns small-6">
+                <div class="row">
+                    <div class="columns small-6"><strong>Department Code</strong></div>
+                    <div class="columns small-6"><span>TD/GFRY</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-3">
+                <label for="tripPurpose"><strong>Purpose of Trip</strong></label>
+            </div>
+            <div class="columns small-9">
+                <textarea name="tripPurpose" id="tripPurpose" rows="1" class=""></textarea>
+                <small class="error hide" id="tripPurposeError"></small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-12">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Meal</th>
+                        <th>Hotel</th>
+                        <th>Auto</th>
+                        <th>Other</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text" id="expense-1-date" name="expense[1][date]"/></td>
+                        <td><input type="text" id="expense-1-description" name="expense[1][description]"/></td>
+                        <td><input type="text" id="expense-1-meal" name="expense[1][meal]"/></td>
+                        <td><input type="text" id="expense-1-hotel" name="expense[1][hotel]"/></td>
+                        <td><input type="text" id="expense-1-auto" name="expense[1][auto]"/></td>
+                        <td><input type="text" id="expense-1-other" name="expense[1][other]"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="expense-2-date" name="expense[2][date]"/></td>
+                        <td><input type="text" id="expense-2-description" name="expense[2][description]"/></td>
+                        <td><input type="text" id="expense-2-meal" name="expense[2][meal]"/></td>
+                        <td><input type="text" id="expense-2-hotel" name="expense[2][hotel]"/></td>
+                        <td><input type="text" id="expense-2-auto" name="expense[2][auto]"/></td>
+                        <td><input type="text" id="expense-2-other" name="expense[2][other]"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="expense-3-date" name="expense[3][date]"/></td>
+                        <td><input type="text" id="expense-3-description" name="expense[3][description]"/></td>
+                        <td><input type="text" id="expense-3-meal" name="expense[3][meal]"/></td>
+                        <td><input type="text" id="expense-3-hotel" name="expense[3][hotel]"/></td>
+                        <td><input type="text" id="expense-3-auto" name="expense[3][auto]"/></td>
+                        <td><input type="text" id="expense-3-other" name="expense[3][other]"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="expense-4-date" name="expense[4][date]"/></td>
+                        <td><input type="text" id="expense-4-description" name="expense[4][description]"/></td>
+                        <td><input type="text" id="expense-4-meal" name="expense[4][meal]"/></td>
+                        <td><input type="text" id="expense-4-hotel" name="expense[4][hotel]"/></td>
+                        <td><input type="text" id="expense-4-auto" name="expense[4][auto]"/></td>
+                        <td><input type="text" id="expense-4-other" name="expense[4][other]"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="expense-5-date" name="expense[5][date]"/></td>
+                        <td><input type="text" id="expense-5-description" name="expense[5][description]"/></td>
+                        <td><input type="text" id="expense-5-meal" name="expense[5][meal]"/></td>
+                        <td><input type="text" id="expense-5-hotel" name="expense[5][hotel]"/></td>
+                        <td><input type="text" id="expense-5-auto" name="expense[5][auto]"/></td>
+                        <td><input type="text" id="expense-5-other" name="expense[5][other]"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns small-12">
+                <input type="submit" value="Submit" class="button right"/>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="js/app.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/dojo/1.10.4/dojo.js"></script>
+<script>
+    require(['app/expenseReport']);
+</script>
+</body>
+</html> 
